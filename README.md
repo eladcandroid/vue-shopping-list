@@ -1,4 +1,4 @@
-# vue-shopping
+# vue-shopping-list
 
 > Shopping list in vue for Y&A exercise. Works with expressJS server that holds a JSON object. Based on Vue-CLI
 
