@@ -117,10 +117,7 @@ h2 {
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-li {
-  margin: 0 10px;
+  margin-bottom: 0;
 }
 
 a {
@@ -139,13 +136,18 @@ a {
   cursor: pointer;
   font-size: large;
   color: red;
-  right: 0;
+  right: 10px;
   position: absolute;
 }
 
 .shopping-list {
   width: $shopping-list-width;
   color: $light-text-color;
+  border: 1px solid $light-border-color;
+  margin-top: 20px;
+  margin-right: 0;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .shopping li {
@@ -170,11 +172,18 @@ a {
   padding-left: 10px;
   padding: $header-padding;
   font-size: $header-font-size;
+  margin-top: 0;
 }
 
 .shopping-details {
   width: $shopping-details-width;
   color: $text-color;
+  border: 1px solid $light-border-color;
+  margin-top: 20px;
+}
+
+.shopping-details li {
+  padding: 15px;
 }
 
 .shopping-details label {
@@ -182,21 +191,21 @@ a {
 }
 
 .shopping-item {
-  padding-top: $item-padding-top;
-  padding-bottom: $item-padding-bottom;
+  padding: $item-padding-top $item-padding-bottom $item-padding-right $item-padding-left;
+  border-bottom: 1px solid $light-border-color;
 }
 
 .shopping-details input {
   width: 100%;
 }
 
-.shopping-list {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 10px;
-}
-
 .shopping-details-showed {
   display: inline-block;
+}
+
+.add-input {
+  border: none;
+  font-size: $item-font-size;
+  padding: $item-padding-top $item-padding-bottom $item-padding-right $item-padding-left;
 }
 </style>
